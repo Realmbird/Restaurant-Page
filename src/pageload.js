@@ -1,5 +1,6 @@
 import BirdLogo from './images/bird.png'
 import BirdChef from './images/tweeting-chef-484.webp'
+import './style.css'
 
 //content div we want to put things into
 const content = document.querySelector('.content')
@@ -15,6 +16,7 @@ content.append(portrait)
 const logo = document.createElement('img');
 logo.src = BirdLogo
 logo.alt = "bird logo"
+logo.classList.add('logo')
 
 content.append(logo)
 
