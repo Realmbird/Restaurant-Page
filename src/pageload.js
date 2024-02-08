@@ -1,5 +1,5 @@
-import BirdLogo from './images/bird.png'
-import BirdChef from './images/tweeting-chef-484.webp'
+import BirdLogo from './images/bird.jpg'
+import BirdChef from './images/tweeting-chef.jpg'
 import './style.css'
 
 //content div we want to put things into
