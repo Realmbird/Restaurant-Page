@@ -1,9 +1,52 @@
 .logo {
-    height: auto;
+    height: 30px;
     width: 30px;
+    
 }
-.red {
-    color: red;
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home {
+    width: 50%;
 }
 
-  
+.heading
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-blue);
+  box-sizing: border-box;
+  width: 710px;
+  height: 60px;
+  text-align: center;
+  clip-path: polygon( 0 33.3%, 5% 0, 95% 0, 100% 33.3%, 100% 66.6%, 95% 100%, 5% 100%, 0 66.6%);
+}
+.home-title {
+    position: relative;
+    right: 27%;
+    color: var(--white);
+}
+.menu-title {
+    position: relative;
+    right: 45%;
+    color: var(--white);
+
+}
+
+:root
+{
+  --white: #f1f5f9;
+  --yellow: #FFC60B;
+  --green: #85AE85;
+  --light-blue: #0A95FF;
+  --dark-blue: #230AFF;
+  --purple: #7766FF;
+  --lilac: #AAA0FF;
+  --dark-orange: #df880a;
+  --chocolate: #c16a08;
+  --khaki: #ffde73;
+}
