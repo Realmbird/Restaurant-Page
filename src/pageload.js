@@ -9,58 +9,80 @@ import './style.css'
 //functions
 
 const homepage = function (){
+
+    const homebtn = document.querySelector('#home')
+    
+
+    const menubtn = document.querySelector('#menu')
+    const aboutbtn = document.querySelector('#about')
+
+    homebtn.classList.toggle("selected")
+
+    aboutbtn.classList.remove("selected");
+    menubtn.classList.remove("selected");
     //content div we want to put things into
-const content = document.querySelector('.content')
-content.innerHTML = ""
+    const content = document.querySelector('.content')
+    content.innerHTML = ""
 
-const title = document.createElement('div')
-title.classList.add('heading')
-
-
-content.append(title)
+    const title = document.createElement('div')
+    title.classList.add('heading')
 
 
-// portrait img
-const portrait = document.createElement('img');
-portrait.src = BirdChef
-portrait.alt = "Bird Chef"
+    content.append(title)
 
-content.append(portrait)
 
-//logo img
-const logo = document.createElement('img');
-logo.src = BirdLogo
-logo.alt = "bird logo"
-logo.classList.add('logo')
-title.append(logo)
+    // portrait img
+    const portrait = document.createElement('img');
+    portrait.src = BirdChef
+    portrait.alt = "Bird Chef"
 
-const text = document.createElement('h1')
-text.textContent = "Bird Seed Buffet"
-text.classList.add("home-title")
-title.append(text)
+    content.append(portrait)
 
-const description = document.createElement('p')
-description.textContent = "Dive into our carefully curated selection of seeds, each chosen for its nutritional value, freshness, and flavor profile."
-content.append(description)
+    //logo img
+    const logo = document.createElement('img');
+    logo.src = BirdLogo
+    logo.alt = "bird logo"
+    logo.classList.add('logo')
+    title.append(logo)
 
-const list = document.createElement('ul')
-content.append(list)
+    const text = document.createElement('h1')
+    text.textContent = "Bird Seed Buffet"
+    text.classList.add("home-title")
+    title.append(text)
 
-const l1 = document.createElement('li')
-l1.textContent = "Classic Blends: Perfectly balanced mixtures that cater to the dietary needs and taste preferences of a wide variety of birds."
-list.append(l1)
+    const description = document.createElement('p')
+    description.textContent = "Dive into our carefully curated selection of seeds, each chosen for its nutritional value, freshness, and flavor profile."
+    content.append(description)
 
-const l2 = document.createElement('li')
-l2.textContent = "Exotic Varieties: Rare seeds from around the globe, offering a taste of adventure for the more curious and cosmopolitan avian palates."
-list.append(l2)
+    const list = document.createElement('ul')
+    content.append(list)
 
-const l3 = document.createElement('li')
-l3.textContent = "Seasonal Specialties: Rotating selections that reflect the bounty of the seasons, ensuring your birds are always engaged and delighted by new flavors."
-list.append(l3)
-console.log("reload")
+    const l1 = document.createElement('li')
+    l1.textContent = "Classic Blends: Perfectly balanced mixtures that cater to the dietary needs and taste preferences of a wide variety of birds."
+    list.append(l1)
+
+    const l2 = document.createElement('li')
+    l2.textContent = "Exotic Varieties: Rare seeds from around the globe, offering a taste of adventure for the more curious and cosmopolitan avian palates."
+    list.append(l2)
+
+    const l3 = document.createElement('li')
+    l3.textContent = "Seasonal Specialties: Rotating selections that reflect the bounty of the seasons, ensuring your birds are always engaged and delighted by new flavors."
+    list.append(l3)
+    console.log("reload")
 }
 
 const menuPage = function () {
+    const homebtn = document.querySelector('#home')
+    
+
+    const menubtn = document.querySelector('#menu')
+    const aboutbtn = document.querySelector('#about')
+
+    menubtn.classList.toggle("selected")
+
+    homebtn.classList.remove("selected");
+    aboutbtn.classList.remove("selected");
+
     //content div we want to put things into
     const content = document.querySelector('.content')
     content.innerHTML = ""
@@ -98,6 +120,16 @@ const menuPage = function () {
     console.log("reload menu")
 }
 const aboutPage = function () {
+    const homebtn = document.querySelector('#home')
+    
+
+    const menubtn = document.querySelector('#menu')
+    const aboutbtn = document.querySelector('#about')
+
+    aboutbtn.classList.toggle("selected")
+
+    homebtn.classList.remove("selected");
+    menubtn.classList.remove("selected");
     //content div we want to put things into
     const content = document.querySelector('.content')
     content.innerHTML = ""
